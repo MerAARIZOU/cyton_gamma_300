@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot>
+	<gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/cyton_gamma_300</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+  <!--base link-->
+  <gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--shoulder roll-->
+  <gazebo reference="shoulder_roll">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--shoulder pitch-->
+  <gazebo reference="shoulder_pitch">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--elbow roll-->
+  <gazebo reference="elbow_roll">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--elbow pitch-->
+  <gazebo reference="elbow_pitch">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--elbow yaw-->
+  <gazebo reference="elbow_yaw">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--wrist pitch-->
+  <gazebo reference="wrist_pitch">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--wrist roll-->
+  <gazebo reference="wrist_roll">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--gripper finger1-->
+  <gazebo reference="gripper_finger1">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!--gripper finger2-->
+  <gazebo reference="gripper_finger2">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+</robot>
