@@ -30,7 +30,6 @@
     <link name="base_link">
         <inertial>
             <origin rpy="0 0 0" xyz="-0.005448 0.010279 0.024284"/>
-            <!--inertia ixx="0.0027580433739307583" ixy="2.1487533634598637e-005" ixz="4.9679787766606887e-005" iyy="0.0023906022640905683" iyz="-7.2656829084958961e-005" izz="0.0034423020901839302" /-->
             <inertia ixx="0.007305" ixy="-0.000051" ixz="-0.000056" iyy="0.006579" iyz="0.000372" izz="0.010933" />
             <mass value="0.901"/>
         </inertial>
@@ -62,7 +61,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.000027 0.026919 -0.000272"/>
             <mass value="0.286"/>
-            <!--inertia ixx="0.00022863469469134738" ixy="1.5168771423042716e-007" ixz="2.9825094273319666e-008" iyy="9.6491034046769468e-005" iyz="6.2980533178207733e-007" izz="0.00023551274076690485"/-->
             <inertia ixx="0.000817" ixy="0.000002" ixz="0.000000" iyy="0.000352" iyz="-0.000003" izz="0.000866"/>
         </inertial>
         <visual>
@@ -73,7 +71,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Shoulder_Roll.stl"/>
             </geometry>
@@ -93,7 +91,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="-0.057818 -0.000005 -0.020753"/>
             <mass value="0.162"/>
-            <!--inertia ixx="6.4227939574869602e-005" ixy="-1.5303622176583676e-008" ixz="-8.9337377022846877e-005" iyy="0.00035019338982638011" iyz="-8.5007962812133576e-009" izz="0.00029998956426541777"/-->
             <inertia ixx="0.000177" ixy="0.000000" ixz="0.000016" iyy="0.000419" iyz="-0.000000" izz="0.000347"/>
         </inertial>
         <visual>
@@ -104,7 +101,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0.028 0 0" rpy="0 1.5708 0" />
+            <origin xyz="0.028 0 0" rpy="0 0 -1.5708" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Shoulder_Pitch.stl"/>
             </geometry>
@@ -124,7 +121,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.000064 -0.000046 0.032285"/>
             <mass value="0.124"/>
-            <!--inertia ixx="8.6273157169451193e-005" ixy="2.3585419409570232e-006" ixz="4.1331354702805883e-008" iyy="8.627307793153646e-005" iyz="-8.118037029887921e-008" izz="1.3018058453490733e-005"/-->
             <inertia ixx="0.000192" ixy="0.000017" ixz="0.000001" iyy="0.000192" iyz="-0.000001" izz="0.000090"/>
         </inertial>
         <visual>
@@ -135,7 +131,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 3.92699" />
+            <origin xyz="0 0 0" rpy="0 0 1.57" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Elbow_Roll.stl"/>
             </geometry>
@@ -155,7 +151,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.000104 0.055008 -0.026105"/>
             <mass value="0.107"/>
-            <!--inertia ixx="0.00022596980421524273" ixy="-1.7532733987909124e-007" ixz="1.3818017323261545e-007" iyy="5.4487784595529139e-005" iyz="7.8255234302844964e-005" izz="0.00018361220925185474"/-->
             <inertia ixx="0.000176" ixy="0.000001" ixz="0.000000" iyy="0.000075" iyz="0.000003" izz="0.000181"/>
         </inertial>
         <visual>
@@ -167,7 +162,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0.027 0 0" rpy="1.5708 0 1.5708" />
+            <origin xyz="0.027 0 0" rpy="0 0 1.57" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Elbow_Pitch.stl"/>
             </geometry>
@@ -187,7 +182,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.000103 0.054796 -0.001090"/>
             <mass value="0.107"/>
-            <!--inertia ixx="0.0001852175819622409" ixy="-1.7532575706358108e-007" ixz="5.9593133061656095e-009" iyy="1.3735562342527465e-005" iyz="3.4442961774428718e-006" izz="0.00018361989660515524"/-->
             <inertia ixx="0.000181" ixy="0.000001" ixz="0.000000" iyy="0.000076" iyz="0.000001" izz="0.000186"/>
         </inertial>
         <visual>
@@ -198,7 +192,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="1.5708 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 1.57" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Elbow_Yaw.stl"/>
             </geometry>
@@ -209,9 +203,9 @@
     <joint name="wrist_pitch_joint" type="revolute">
         <parent link="elbow_yaw" />
         <child link="wrist_pitch" />
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin rpy="1.5708 0 1.5708" xyz="0.0263 0 0.070"/>
         <limit lower="-1.8326" upper="1.8326" effort="100.0" velocity="1.0" />
-        <axis xyz="1 0 0" />
+        <axis xyz="0 0 1"/>
     </joint>
 
     <link name="wrist_pitch">
@@ -222,14 +216,14 @@
             <!--inertia ixx="0.000027" ixy="0.000000" ixz="0.000000" iyy="0.000000" iyz="0.000002" izz="0.000000"/-->
         </inertial>
         <visual>
-            <origin xyz="0.027 0 0" rpy="1.5708 0 1.5708" />
+            <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Wrist_Pitch.dae"/>
             </geometry>
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0.027 0 0" rpy="1.5708 0 1.5708" />
+            <origin xyz="0 0 0" rpy="1.57 0 3.14" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Wrist_Pitch.stl"/>
             </geometry>
@@ -240,7 +234,7 @@
     <joint name="wrist_roll_joint" type="revolute">
         <parent link="wrist_pitch" />
         <child link="wrist_roll" />
-        <origin xyz="0 0 0.051425" rpy="0 0 1.2" />
+        <origin rpy="4.71 0 3.14" xyz="0 0.05 -0.027"/>
         <limit lower="-2.61799" upper="2.61799" effort="100.0" velocity="1.0" />
         <axis xyz="0 0 1" />
     </joint>
@@ -249,18 +243,17 @@
         <inertial>
             <origin rpy="0 0 0" xyz="-0.000704 -0.001866 -0.010629"/>
             <mass value="0.205"/>
-            <!--inertia ixx="8.2749317554718933e-005" ixy="-9.5184372428644117e-007" ixz="-4.4850718092786647e-006" iyy="5.5048868318415914e-005" iyz="-7.724674187462682e-007" izz="4.6617108785519741e-005"/-->
             <inertia ixx="0.000519" ixy="0.000004" ixz="0.000021" iyy="0.000308" iyz="0.000014" izz="0.000346"/>
         </inertial>
         <visual>
-            <origin xyz="0 0 0" rpy="0 3.14159 1.5708" />
+            <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Wrist_Roll.dae"/>
             </geometry>
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 3.14159 1.5708" />
+            <origin xyz="0 0 0" rpy="3.14 0 0" />
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Wrist_Roll.stl"/>
             </geometry>
@@ -271,7 +264,7 @@
     <joint name="gripper_joint" type="prismatic">
         <parent link="wrist_roll" />
         <child link="gripper_finger1" />
-        <origin xyz="-0.01331 0.00485 0.077225" rpy="0 0 0" />
+        <origin rpy="3.14 0 1.57" xyz="-0.010 -0.010 -0.043"/>
         <limit lower="-0.008" upper="0.008" effort="100.0" velocity="1.0" />
         <axis xyz="1 0 0" />
     </joint>
@@ -280,7 +273,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="-0.008938 0.007096 0.020878"/>
             <mass value="0.005"/>
-            <!--inertia ixx="4.0306043699318439e-006" ixy="3.1322511967303119e-007" ixz="5.31333165785879e-007" iyy="3.3816691247966298e-006" iyz="-1.1245247259016564e-006" izz="1.3320219638030447e-006"/-->
             <inertia ixx="0.000002" ixy="0.000000" ixz="0.000000" iyy="0.000002" iyz="0.000000" izz="0.000001"/>
         </inertial>
         <visual>
@@ -291,7 +283,7 @@
                 <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Gripper_Finger1.stl"/>
             </geometry>
@@ -302,7 +294,7 @@
     <joint name="gripper_joint2" type="prismatic">
         <parent link="wrist_roll" />
         <child link="gripper_finger2" />
-        <origin xyz="0.0098 0.00485 0.077225" rpy="0 0 0" />
+        <origin rpy="3.14 0 1.57" xyz="-0.010 0.010 -0.043"/>
         <limit lower="-0.008" upper="0.008" effort="100.0" velocity="1.0" />
         <mimic joint="gripper_joint" multiplier="-1"/>
         <axis xyz="1 0 0" />
@@ -312,7 +304,6 @@
         <inertial>
             <origin rpy="0 0 0" xyz="0.008938 0.007097 0.020878"/>
             <mass value="0.005"/>
-            <!--inertia ixx="4.0306064200721274e-006" ixy="-3.1322638285442269e-007" ixz="-5.313339602438691e-007" iyy="3.381671645922815e-006" iyz="-1.1245253859540647e-006" izz="1.332025523210381e-006"/-->
             <inertia ixx="0.000002" ixy="0.000000" ixz="0.000000" iyy="0.000002" iyz="0.000000" izz="0.000001"/>
         </inertial>
         <visual>
@@ -323,7 +314,7 @@
             <material name="black"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
             <geometry>
                 <mesh filename="package://cyton_gamma_300_description/meshes/Gripper_Finger2.stl"/>
             </geometry>
